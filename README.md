@@ -55,7 +55,7 @@ A stunning, Matrix-inspired personal portfolio website built with pure HTML and 
 ### File Structure
 
 ```
-PLP_portfolio/
+matrix-portfolio/
 ├── index.html          # Home page
 ├── about.html          # About page
 ├── skills.html         # Skills page
