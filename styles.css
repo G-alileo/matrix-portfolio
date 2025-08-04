@@ -965,9 +965,16 @@ h6 {
     display: flex;
   }
 
+  /* Hide regular navigation on mobile */
   .nav-menu {
+    display: none;
+  }
+
+  /* Show mobile navigation when checkbox is checked */
+  .nav-toggle:checked ~ .nav-menu {
+    display: flex;
     position: fixed;
-    left: -100%;
+    left: 0;
     top: 70px;
     flex-direction: column;
     background-color: var(--darker-bg);
@@ -976,11 +983,7 @@ h6 {
     transition: 0.3s;
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
     padding: 2rem 0;
-  }
-
-  /* CSS-only mobile menu toggle */
-  .nav-toggle:checked ~ .nav-menu {
-    left: 0;
+    z-index: 999;
   }
 
   /* Hamburger animation when checked */
