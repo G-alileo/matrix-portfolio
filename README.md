@@ -175,7 +175,7 @@ All animations are CSS-only and can be customized in the `styles.css` file:
 
 ### GitHub Pages
 
-Link : 
+Link : https://g-alileo.github.io/matrix-portfolio/
 
 
 ## 📝 License
