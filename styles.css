@@ -115,6 +115,10 @@ h6 {
   text-shadow: 0 0 5px var(--glow-color);
 }
 
+.nav-toggle {
+  display: none;
+}
+
 .hamburger {
   display: none;
   flex-direction: column;
@@ -974,8 +978,22 @@ h6 {
     padding: 2rem 0;
   }
 
-  .nav-menu.active {
+  /* CSS-only mobile menu toggle */
+  .nav-toggle:checked ~ .nav-menu {
     left: 0;
+  }
+
+  /* Hamburger animation when checked */
+  .nav-toggle:checked ~ .hamburger .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .nav-toggle:checked ~ .hamburger .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .nav-toggle:checked ~ .hamburger .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
   }
 
   .hero-content {
